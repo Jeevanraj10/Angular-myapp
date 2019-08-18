@@ -1,0 +1,9 @@
+<p>data-binding works!</p>
+<button class="btn btn-primary" (click)="onClick($event)">Click</button>
+<div class="row">
+    <div class="col-xs-12">
+        <input type="text" [(ngModel)]="data1">
+    </div>
+</div>
+
+<p>{{data1}}</p>

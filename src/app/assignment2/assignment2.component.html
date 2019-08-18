@@ -1,0 +1,5 @@
+<p>Assignment2 - directives</p>
+<button class="btn btn-primary" (click)=onToggleDetails()>Display details</button>
+<p *ngIf=showSecret>Secret Password = Tuna</p>
+<div *ngFor="let logItem of log; let i = index" [ngStyle]="{backgroundColor: i >= 3 ? 'green':'transparent'}" [ngClass]="{'white':i >= 3}">{{logItem}}
+</div>

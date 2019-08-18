@@ -1,0 +1,19 @@
+<label>Server name </label>
+<!-- <input type="text" (input)="onUpdateServerName($event)"> -->
+<input type="text" [(ngModel)]="serverName">
+<!-- <h5>{{ serverName }}</h5> -->
+<button class="btn" [disabled]="!allowNewServer" (click)="onCreateServerStatus()">Add Server
+</button>
+<h3 *ngIf="serverCreated">The server is created again {{ serverName}}</h3>
+<p>{{ serverCreationStatus }}</p>
+<h3 [innerText]="allowNewServer"></h3>
+<p [ngStyle]="{backgroundColor:getColor()}">The server ID {{ serverID }} is {{ getServerStatus() }}</p>
+<!-- <app-success-alert *ngFor="let server of servers"></app-success-alert> -->
+
+<!-- <h4 *ngFor="let server of servers"></h4> -->
+<div *ngFor='let lst of appList'>
+    <ul>
+        <li>{{lst.ID}}</li>
+        <li>{{lst.Name}}</li>
+    </ul>
+</div>

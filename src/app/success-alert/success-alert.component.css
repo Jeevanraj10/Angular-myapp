@@ -1,0 +1,12 @@
+p {
+    padding: 20px;
+    border: 1px solid royalblue;
+    color: brown;
+    background-color: burlywood
+}
+
+.btn {
+    padding: 5px;
+    background-color: blue;
+    color: white;
+}
